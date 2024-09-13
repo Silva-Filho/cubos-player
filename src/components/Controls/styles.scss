@@ -1,0 +1,33 @@
+.container-controls {
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        all: unset;
+        cursor: pointer;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        &.principal-button {
+            img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            color: #FFF;
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+    }
+}

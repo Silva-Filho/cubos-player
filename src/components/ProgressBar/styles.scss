@@ -1,0 +1,97 @@
+.progress-container {
+    width: 645px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // border: 2px solid red;
+
+    strong {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #CCC3C3;
+    }
+
+    .progress-line {
+        position: relative;
+
+        .line {
+            width: 500px;
+            border-bottom: 4px solid #CCC3C3;
+            cursor: pointer;
+        }
+
+        .line-progressed {
+            // width: 40%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: 4px solid #E5007B;
+        }
+    }
+
+    input[type=range] {
+        --bar-bg: #FFE3D4;
+        --seek-before-width: 0;
+        // --seek-before-color: #FFC2A1;
+        --seek-before-color: #E5007B;
+        // --knobby: #3452A5;
+        --knobby: #04D361;
+        // --selectedKnobby: #26C9C3;
+        --selectedKnobby: #058d88;
+
+        width: 500px;
+        height: 11px;
+        position: relative;
+        appearance: none;
+        background-color: var(--bar-bg);
+        border-radius: 10px;
+        outline: none;
+        // border: 0;
+        cursor: pointer;
+
+        &:disabled {
+            cursor: not-allowed;
+
+            &::-webkit-slider-thumb {
+                cursor: not-allowed;
+            }
+        }
+
+        &::before {
+            content: "";
+            height: 11px;
+            width: var(--seek-before-width);
+            background-color: var(--seek-before-color);
+            // border-top-left-radius: 10px;
+            // border-bottom-left-radius: 10px;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+        &::-webkit-slider-thumb {
+            appearance: none;
+            -webkit-appearance: none;
+            margin: -1px 0 0 -0.5px;
+            height: 20px;
+            width: 20px;
+            position: relative;
+            z-index: 3;
+            border-radius: 50%;
+            border: none;
+            background-color: var(--knobby);
+            cursor: pointer;
+        }
+
+        &:active::-webkit-slider-thumb {
+            transform: scale(1.2);
+            background: var(--selectedKnobby);
+        }
+    }
+}

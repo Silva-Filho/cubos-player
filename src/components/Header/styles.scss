@@ -1,0 +1,33 @@
+header {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #6A6363;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        margin-right: 16px;
+        width: 40px;
+        height: auto;
+        border-radius: 50%;
+        border: 2px solid #6A6363;
+        cursor: pointer;
+    }
+
+    span {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.1rem;
+        color: #FFF;
+    }
+}

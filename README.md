@@ -75,7 +75,7 @@ Para os teste unitários, usou-se o [Vitest](https://vitest.dev/) e o [Testing L
 
 ## Demonstração
 
-https://github.com/user-attachments/assets/51286396-a472-4370-beaf-ef226043ea3a
+ ![Cubos Player](https://github.com/user-attachments/assets/dda5be12-5293-4d80-aff7-4831c718d4ca)
 
 
 ## Funcionalidades
